@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogForm</class>
+ <widget class="QWidget" name="LogForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>日志</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: rgb(50, 50, 50);
+	color: rgb(255, 255, 255);
+}
+
+QPushButton {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.85);
+	min-width: 45px;
+	min-height: 22px;
+	outline: none;
+	border-radius: 6px; 
+            
+	/* 3D 效果 */
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	border-left: 1px solid rgba(255, 255, 255, 0.15);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+ }
+
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 0.12);
+	color: rgba(255, 255, 255, 0.95);
+
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	border-right: 1px solid rgba(0, 0, 0, 0.4);
+ }
+
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 0.05);
+	color: rgba(255, 255, 255, 0.8);
+            
+	/* 反转边框实现凹陷效果 */
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	border-right: 1px solid rgba(255, 255, 255, 0.15);
+ }
+
+QPushButton:disabled {
+	background-color: rgba(255, 255, 255, 0.03);
+	color: #999999;
+
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-left: 1px solid rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+ }</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>9</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="clean">
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
